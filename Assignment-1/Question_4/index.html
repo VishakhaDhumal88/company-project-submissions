@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>University Admission Portal</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">University Name</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#apply">Apply</a>
+            <a href="#status">Check Status</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to University Admission Portal</h1>
+        <p>Your journey to excellence starts here. Submit your application now!</p>
+        <a href="#apply" class="cta-btn">Apply Now</a>
+    </section>
+
+    <!-- Application Form -->
+    <section id="apply" class="form-section">
+        <h2>Online Application Form</h2>
+        <form id="admissionForm">
+            <div class="form-row">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+            <div class="form-row">
+                <label for="lname">Last Name *</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+            <div class="form-row">
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <label for="phone">Mobile No. *</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-row">
+                <label for="gender">Gender *</label>
+                <select id="gender" name="gender" required>
+                    <option value="">--Select--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="course">Select Course *</label>
+                <select id="course" name="course" required>
+                    <option value="">--Select--</option>
+                    <option value="BTech">B.Tech</option>
+                    <option value="BSc">B.Sc</option>
+                    <option value="BA">B.A.</option>
+                    <option value="BCom">B.Com</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="branch">Select Branch *</label>
+                <select id="branch" name="branch" required>
+                    <option value="">--Select--</option>
+                    <option value="CSE">CSE</option>
+                    <option value="IT">IT</option>
+                    <option value="ECE">ECE</option>
+                    <option value="Civil">Civil</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="address">Address *</label>
+                <textarea id="address" name="address" rows="2" required></textarea>
+            </div>
+            <div class="form-row">
+                <label for="photo">Photo Upload *</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+            <button type="submit" class="form-btn">Submit Application</button>
+        </form>
+        <div id="formMessage"></div>
+    </section>
+
+    <!-- Status Section -->
+    <section id="status" class="status-section">
+        <h2>Check Application Status</h2>
+        <form id="statusForm">
+            <div class="form-row">
+                <label for="appNo">Application Number</label>
+                <input type="text" id="appNo" name="appNo" required>
+            </div>
+            <button type="submit" class="form-btn">Check Status</button>
+        </form>
+        <div id="statusMessage"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: admissions@university.edu</p>
+        <p>Phone: +91-1234567890</p>
+        <p>Address: 123 College Road, City, State</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 University Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
